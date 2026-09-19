@@ -44,7 +44,7 @@ const DESIGNS = [
     path: "/deep-infrastructure",
     name: "深海核心",
     english: "Deep Infrastructure",
-    image: "/references/deep-infrastructure.png",
+    image: "./references/deep-infrastructure.png",
     summary: "以架构核心为主角，强调 BinBot Foundation 的平台能力与技术可信度。",
     tone: "深色 / 架构感 / 技术决策者",
   },
@@ -52,7 +52,7 @@ const DESIGNS = [
     path: "/cloud-editorial",
     name: "云端编辑",
     english: "Cloud Editorial",
-    image: "/references/cloud-editorial.png",
+    image: "./references/cloud-editorial.png",
     summary: "以真实产品界面建立信任，表达清晰、明亮，适合企业客户快速理解。",
     tone: "明亮 / 产品化 / 商务沟通",
   },
@@ -60,7 +60,7 @@ const DESIGNS = [
     path: "/engineering-delivery",
     name: "工程交付",
     english: "Engineering Delivery",
-    image: "/references/engineering-delivery.png",
+    image: "./references/engineering-delivery.png",
     summary: "以完整交付路径为叙事中心，突出从需求到长期运维的一体化能力。",
     tone: "工程 / 流程感 / 项目负责人",
   },
@@ -149,7 +149,7 @@ function Brand({ inverse = false, companyOnly = false }) {
   if (companyOnly) {
     return (
       <button className="company-brand" type="button" onClick={() => goTo("/")} aria-label="返回方案总览">
-        <img src={inverse ? "/brand/binbot-icon-inverse.svg" : "/brand/binbot-icon.svg"} alt="" />
+        <img src={inverse ? "./brand/binbot-icon-inverse.svg" : "./brand/binbot-icon.svg"} alt="" />
         <span>{COMPANY_NAME}</span>
       </button>
     );
@@ -159,7 +159,7 @@ function Brand({ inverse = false, companyOnly = false }) {
     <button className="brand-lockup" type="button" onClick={() => goTo("/")} aria-label="返回方案总览">
       <span>{COMPANY_NAME.replace("有限公司", "")}</span>
       <span className="brand-divider" aria-hidden="true" />
-      <img src={inverse ? "/brand/binbot-lockup-inverse.svg" : "/brand/binbot-lockup.svg"} alt="BinBot" />
+      <img src={inverse ? "./brand/binbot-lockup-inverse.svg" : "./brand/binbot-lockup.svg"} alt="BinBot" />
     </button>
   );
 }
@@ -297,7 +297,7 @@ function OverviewPage() {
           <h1>三种官网表达，<br />同一个彬剑云。</h1>
           <p>三套方案均已实现为可交互、可响应的完整页面。选择任一方向进入浏览，也可随时使用页面右侧切换器进行对比。</p>
         </div>
-        <div className="overview-orbit" aria-hidden="true"><img src="/brand/binbot-icon-inverse.svg" alt="" /></div>
+        <div className="overview-orbit" aria-hidden="true"><img src="./brand/binbot-icon-inverse.svg" alt="" /></div>
       </section>
       <section className="design-gallery" aria-labelledby="design-gallery-title">
         <div className="section-heading section-heading--center"><p className="eyebrow">DESIGN DIRECTIONS</p><h2 id="design-gallery-title">选择一个方向开始体验</h2></div>
@@ -325,7 +325,7 @@ function DeepArchitectureVisual() {
     <div className="deep-architecture" aria-label="BinBot Foundation 架构示意">
       <div className="architecture-ring architecture-ring--outer" aria-hidden="true" />
       <div className="architecture-ring architecture-ring--inner" aria-hidden="true" />
-      <div className="architecture-core"><img src="/brand/binbot-icon.svg" alt="BinBot Foundation" /></div>
+      <div className="architecture-core"><img src="./brand/binbot-icon.svg" alt="BinBot Foundation" /></div>
       {ARCHITECTURE_NODES.map((node, index) => <div className={`architecture-node architecture-node--${index + 1}`} key={node.label}><span>{node.icon}</span><strong>{node.label}</strong></div>)}
       <div className="architecture-outputs">
         <div><TeamOutlined /><span>Admin UI</span></div><div><DesktopOutlined /><span>Customer UI</span></div><div><CodeOutlined /><span>Deploy Console</span></div>
@@ -376,9 +376,9 @@ function ProductWindow() {
   return (
     <div className="product-composition" aria-label="BinBot 产品界面示意">
       <div className="product-window">
-        <aside><img src="/brand/binbot-icon-inverse.svg" alt="" />{[<AppstoreOutlined />, <TeamOutlined />, <LockOutlined />, <SettingOutlined />].map((icon, index) => <span key={index}>{icon}</span>)}</aside>
+        <aside><img src="./brand/binbot-icon-inverse.svg" alt="" />{[<AppstoreOutlined />, <TeamOutlined />, <LockOutlined />, <SettingOutlined />].map((icon, index) => <span key={index}>{icon}</span>)}</aside>
         <div className="product-window-main">
-          <div className="product-window-top"><img src="/brand/binbot-lockup.svg" alt="BinBot" /><span><UserOutlined /> A</span></div>
+          <div className="product-window-top"><img src="./brand/binbot-lockup.svg" alt="BinBot" /><span><UserOutlined /> A</span></div>
           <div className="product-title-row"><div><small>UBS / WORKSPACE</small><h3>业务空间管理</h3></div><button type="button">新建空间</button></div>
           <div className="product-filter"><span>搜索业务空间名称</span><span>运行状态</span></div>
           <div className="product-table" role="listbox" aria-label="业务空间列表">
@@ -432,7 +432,7 @@ function DeliveryBlueprint() {
     <div className="delivery-blueprint" aria-label="五阶段交付蓝图">
       <p>DELIVERY BLUEPRINT</p>
       <div className="blueprint-path">{DELIVERY_STEPS.map((step, index) => <article key={step.title}><span>{step.icon}</span><h3>{step.title}</h3>{index < DELIVERY_STEPS.length - 1 ? <ArrowRightOutlined /> : null}</article>)}</div>
-      <div className="blueprint-core"><img src="/brand/binbot-lockup.svg" alt="BinBot Foundation" /><span>BinBot Foundation</span></div>
+      <div className="blueprint-core"><img src="./brand/binbot-lockup.svg" alt="BinBot Foundation" /><span>BinBot Foundation</span></div>
       <div className="blueprint-services">{ARCHITECTURE_NODES.map((node) => <span key={node.label}>{node.icon}{node.label}<i /></span>)}</div>
     </div>
   );
@@ -476,7 +476,7 @@ function DeliverySection({ variant, onConsult }) {
 function AboutSection({ variant }) {
   return (
     <section className={`about-section about-section--${variant}`} id="about">
-      <div className="about-mark"><img src="/brand/binbot-icon-inverse.svg" alt="" /></div>
+      <div className="about-mark"><img src="./brand/binbot-icon-inverse.svg" alt="" /></div>
       <div><p className="eyebrow">ABOUT BINJIAN CLOUD</p><h2>以可靠工程能力，支撑业务长期演进</h2><p>彬剑云信息技术有限公司专注企业级数字化系统建设。我们以 BinBot Foundation 为技术底座，将共性平台能力、业务研发和私有化交付整合为一套可持续运行的工程体系。</p></div>
       <dl><div><dt>Foundation</dt><dd>统一基础能力</dd></div><div><dt>Delivery</dt><dd>完整交付闭环</dd></div><div><dt>Evolution</dt><dd>持续迭代演进</dd></div></dl>
     </section>
