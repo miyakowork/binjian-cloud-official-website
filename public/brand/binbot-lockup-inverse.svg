@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1124 256" role="img" aria-labelledby="title">
+  <title id="title">BinBot inverse icon and wordmark</title>
+  <g>
+    <path d="M78 58V28M178 58V28" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" />
+    <circle cx="78" cy="22" r="10" fill="#FFFFFF" />
+    <circle cx="178" cy="22" r="10" fill="#FFFFFF" />
+    <rect x="18" y="106" width="24" height="48" rx="6" fill="#102A56" stroke="#FFFFFF" stroke-width="10" />
+    <rect x="214" y="106" width="24" height="48" rx="6" fill="#102A56" stroke="#FFFFFF" stroke-width="10" />
+    <rect x="36" y="58" width="184" height="152" rx="18" fill="#102A56" stroke="#FFFFFF" stroke-width="14" />
+    <rect x="66" y="96" width="124" height="76" rx="8" fill="#FFFFFF" />
+    <circle cx="99" cy="132" r="9" fill="#102A56" />
+    <circle cx="157" cy="132" r="9" fill="#102A56" />
+    <rect x="121" y="151" width="14" height="8" rx="4" fill="#102A56" />
+  </g>
+  <g transform="translate(308)">
+    <g fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 36v109c0 38 25 63 59 63 36 0 61-27 61-68S127 72 91 72c-29 0-50 17-59 38" />
+      <path d="M200 90v116" />
+      <path d="M246 206v-94c0-24 18-40 42-40 28 0 48 20 48 48v86" />
+      <path d="M378 36v109c0 38 25 63 59 63 36 0 61-27 61-68s-25-68-61-68c-29 0-50 17-59 38" />
+      <circle cx="606" cy="140" r="68" />
+      <path d="M748 40v134c0 22 12 34 34 34" />
+      <path d="M718 82h58" />
+    </g>
+    <circle cx="200" cy="46" r="16" fill="#FFFFFF" />
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">BinBot inverse icon</title>
+  <path d="M78 58V28M178 58V28" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" />
+  <circle cx="78" cy="22" r="10" fill="#FFFFFF" />
+  <circle cx="178" cy="22" r="10" fill="#FFFFFF" />
+  <rect x="18" y="106" width="24" height="48" rx="6" fill="#102A56" stroke="#FFFFFF" stroke-width="10" />
+  <rect x="214" y="106" width="24" height="48" rx="6" fill="#102A56" stroke="#FFFFFF" stroke-width="10" />
+  <rect x="36" y="58" width="184" height="152" rx="18" fill="#102A56" stroke="#FFFFFF" stroke-width="14" />
+  <rect x="66" y="96" width="124" height="76" rx="8" fill="#FFFFFF" />
+  <circle cx="99" cy="132" r="9" fill="#102A56" />
+  <circle cx="157" cy="132" r="9" fill="#102A56" />
+  <rect x="121" y="151" width="14" height="8" rx="4" fill="#102A56" />
+</svg>
