@@ -37,7 +37,7 @@ export function CompanyHome() {
   return <div className="bc-site">
     <a className="bc-skip" href="#bc-main">跳到正文</a>
     <header className="bc-header">
-      <a className="bc-brand" href="#/" aria-label="彬剑云首页" onClick={()=>{setMenuOpen(false);window.scrollTo({top:0,behavior:"instant"});}}><img src="./brand/binbot-icon.svg" alt=""/><span>彬剑云<small>BINJIAN CLOUD</small></span></a>
+      <a className="bc-brand" href="#/" aria-label="彬剑云首页" onClick={()=>{setMenuOpen(false);window.scrollTo({top:0,behavior:"instant"});}}><img src="./brand/binbot-icon.svg" alt=""/><span>彬剑云<small>binbotcloud.com</small></span></a>
       <nav className={menuOpen ? "bc-nav is-open" : "bc-nav"} aria-label="网站导航" id="bc-navigation">
         {[["bc-capabilities", "产品能力"], ["bc-foundation", "交付优势"], ["bc-solutions", "解决方案"], ["bc-about", "关于我们"]].map(([id, label]) => <button key={id} onClick={() => go(id)}>{label}</button>)}
       </nav>
