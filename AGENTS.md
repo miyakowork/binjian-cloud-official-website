@@ -1,5 +1,7 @@
 # Prototype Instructions
 
+Public-facing copy must be understandable to non-developers. Explain customer outcomes, efficient delivery and quality checks; do not expose programming languages, frameworks, internal module names or infrastructure jargon. Preserve the BinBot brand, and avoid unsubstantiated superlatives or guarantees.
+
 The company homepage prioritizes mobile web browsing. Ground capability copy in the current BinBot Foundation modules. The user has retired all three previous concepts: keep only the redesigned company website, without concept routes, galleries, switchers, or reference assets. Do not invent contact details, customer counts, certifications, or performance claims.
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
